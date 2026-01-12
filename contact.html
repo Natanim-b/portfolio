@@ -1,29 +1,145 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Contact | Natanim Gebru</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<meta content="Contact Natanim Gebru — Web &amp; IT Technician and Software Engineering Student." name="description"/>
+<title>Contact | Natanim Gebru</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
-<body class = "con">
-  <header>
-    <h1 style="margin-left: 30px;"> Contact Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <section>
-      <h2>Reach Out</h2>
-      <p>Whether you're looking to collaborate, hire, or just connect, feel free to reach out.</p>
-      <p>Email: <a href="mailto:rasaman3@gmail.com">rasaman3@gmail.com</a></p>
-      <p>Phone: +1 647-704-3953</p>
-      <p>Location: Toronto, ON, Canada</p>
-    </section>
-  </div>
-
-  <footer style="background-color: transparent;"> © 2025 Natanim Gebru</footer>
+<body>
+<header>
+<div class="container header-inner">
+<a aria-label="Home" class="brand" href="index.html">
+<div class="logo"><span>NG</span></div>
+<div class="title">
+<b>Natanim Gebru</b>
+<small>Contact</small>
+</div>
+</a>
+<nav aria-label="Primary" class="desktop">
+<a href="index.html#about">About</a>
+<a href="index.html#skills">Skills</a>
+<a href="index.html#projects">Projects</a>
+<a class="active" href="contact.html">Contact</a>
+<a class="btn small" href="assets/Natanim_Gebru_Resume.pdf" rel="noopener" target="_blank">Resume</a>
+</nav>
+<button aria-label="Open menu" class="burger" id="burger" title="Menu">
+      ☰
+    </button>
+</div>
+</header>
+<!-- Mobile menu -->
+<div aria-hidden="true" class="mobile-panel" id="mobilePanel">
+<div class="mobile-sheet">
+<div class="head">
+<div class="brand">
+<div class="logo"><span>NG</span></div>
+<div class="title"><b>Natanim Gebru</b><small>Menu</small></div>
+</div>
+<button aria-label="Close menu" class="burger" id="mobileClose" title="Close">✕</button>
+</div>
+<nav aria-label="Mobile">
+<a href="index.html#about">About</a>
+<a href="index.html#skills">Skills</a>
+<a href="index.html#projects">Projects</a>
+<a href="contact.html">Contact</a>
+<a class="btn small" href="assets/Natanim_Gebru_Resume.pdf" rel="noopener" target="_blank">Open Resume</a>
+</nav>
+</div>
+</div>
+<main>
+<section class="hero" style="background:
+    linear-gradient(180deg, rgba(11,13,18,.25) 0%, rgba(11,13,18,.95) 72%),
+    url('assets/contact-bg.png') center/cover no-repeat;">
+<div class="container">
+<div class="hero-grid" style="grid-template-columns: 1fr 1fr;">
+<div class="reveal">
+<div class="kicker"><span class="dot"></span> Let’s connect</div>
+<h1>Contact <span class="accent">Me</span></h1>
+<p>
+            Whether you're hiring, collaborating, or just connecting—send a message and I’ll reply as soon as I can.
+          </p>
+<div class="hero-actions">
+<a class="btn" href="mailto:rasaman3@gmail.com?subject=Hello%20Natanim%20%E2%80%94%20Opportunity%20/%20Collaboration">Email Me</a>
+<a class="btn secondary" href="tel:+16477043953">Call</a>
+</div>
+<div class="quick-actions">
+<button class="pill copy-btn" data-copy="rasaman3@gmail.com" type="button">rasaman3@gmail.com</button>
+<button class="pill copy-btn" data-copy="+1 647-704-3953" type="button">+1 (647) 704‑3953</button>
+<span class="pill">📍 <strong>Toronto</strong> <span class="muted">ON, Canada</span></span>
+</div>
+</div>
+<div class="card reveal">
+<h3 style="font-size:18px;">Quick Message</h3>
+<p class="small">This form opens your email app (no backend needed).</p>
+<div class="hr"></div>
+<form action="mailto:rasaman3@gmail.com" enctype="text/plain" method="post">
+<label class="small" for="name">Name</label>
+<input id="name" name="name" required="" style="width:100%;margin:6px 0 12px;padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.05);color:rgba(255,255,255,.92);"/>
+<label class="small" for="email">Email</label>
+<input id="email" name="email" required="" style="width:100%;margin:6px 0 12px;padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.05);color:rgba(255,255,255,.92);" type="email"/>
+<label class="small" for="message">Message</label>
+<textarea id="message" name="message" required="" rows="6" style="width:100%;margin:6px 0 14px;padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.05);color:rgba(255,255,255,.92);resize:vertical;"></textarea>
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+<button class="btn" type="submit">Send</button>
+<a class="btn secondary" href="index.html">Back Home</a>
+</div>
+<p class="small muted" style="margin-top:12px;">
+              Tip: If your browser blocks mailto forms, you can directly email me using the “Email Me” button above.
+            </p>
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-head">
+<div>
+<h2>Details</h2>
+<p>Fast ways to reach me.</p>
+</div>
+</div>
+<div class="grid">
+<div class="card reveal" style="grid-column: span 4;">
+<h3>Email</h3>
+<p class="small">rasaman3@gmail.com</p>
+<div class="hr"></div>
+<a class="btn small" href="mailto:rasaman3@gmail.com">Compose Email</a>
+</div>
+<div class="card reveal" style="grid-column: span 4;">
+<h3>Phone</h3>
+<p class="small">+1 647‑704‑3953</p>
+<div class="hr"></div>
+<a class="btn small secondary" href="tel:+16477043953">Call</a>
+</div>
+<div class="card reveal" style="grid-column: span 4;">
+<h3>Location</h3>
+<p class="small">Toronto, ON, Canada</p>
+<div class="hr"></div>
+<a class="btn small ghost" href="index.html#projects">See work</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container footer-grid">
+<div>
+<b>Natanim Gebru</b><br/>
+<span class="small">© <span id="year"></span></span>
+</div>
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="assets/Natanim_Gebru_Resume.pdf" rel="noopener" target="_blank">Resume</a>
+<a href="mailto:rasaman3@gmail.com">Email</a>
+</div>
+</div>
+</footer>
+<button aria-label="Back to top" class="backTop" id="backTop" title="Back to top">↑</button>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
 </body>
 </html>

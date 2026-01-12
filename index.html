@@ -1,119 +1,366 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Natanim Gebru | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<meta content="Portfolio of Natanim Gebru — Web &amp; IT Technician and Software Engineering Student. Front-end development, web &amp; database systems, networking, and support." name="description"/>
+<meta content="Natanim Gebru | Portfolio" property="og:title"/>
+<meta content="Web &amp; IT Technician • Software Engineering Student — front-end, web &amp; database systems, networking, and support." property="og:description"/>
+<meta content="assets/og.png" property="og:image"/>
+<title>Natanim Gebru | Portfolio</title>
+<link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <div class="container header-container">
-      <div class="logo">N.G.</div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="#about">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="assets/Natanim_Gebru_Resume.pdf" class="btn" target="_blank">Resume</a>
-      </nav>
-    </div>
-  </header>
-
-  <section class="hero">
-    <div class="container hero-container">
-      <aside class="profile-pic">
-        <img src="assets/profile.jpg" alt="Natanim Gebru" />
-      </aside>
-      <div class="intro-text">
-        <h1>Hello! I'm <span class="highlight">Natanim Gebru</span></h1>
-        <h2>Web & IT Technician | Software Engineering Student</h2>
-        <p>
-          I specialize in web and database systems, smart tech integration, and front-end development.
-          With a solid foundation in engineering and hands-on experience supporting users and servers,
-          I’m passionate about building practical, user-centric digital solutions.
-        </p>
-        <a href="#about" class="btn">Explore More</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="section dark">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        With excellent communication and interpersonal skills, I excel at working with others to solve technical challenges.
-        My experience ranges from managing desktop support and integrating smart home systems to repairing and
-        maintaining server hardware. I bring discretion, diplomacy, and professionalism to every project I join.
-      </p>
-    </div>
-  </section>
-
-  <section class="section dark bg-tech">
-    <div class="container">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div>
-          <h3>Languages</h3>
-          <p>HTML, CSS, JavaScript, Python, Java, C++, C#</p>
-        </div>
-        <div>
-          <h3>Frameworks & Tools</h3>
-          <p>React, Firebase, SQL Server</p>
-        </div>
-        <div>
-          <h3>Specialties</h3>
-          <p>Web & Database Systems, Smart Devices, Networking, Support</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section dark">
-    <div class="container">
-      <h2>Professional Experience</h2>
-      <div class="job">
-        <h3>Computer Electrician – AMPS Logic Electric Ltd</h3>
-        <p><em>Toronto, ON | 2022 - 2024</em></p>
-        <ul>
-          <li>Installed computer-controlled machinery and networking systems.</li>
-          <li>Maintained and repaired server racks and smart devices.</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Desktop Support Manager – Ethiopia</h3>
-        <p><em>2020 - 2021</em></p>
-        <ul>
-          <li>Resolved user issues across hardware, OS, and software.</li>
-          <li>Improved service delivery and internal system efficiency.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section dark">
-    <div class="container">
-      <h2>Education & Certifications</h2>
-      <div class="education-grid">
-        <div>
-          <h3>Western Governors University</h3>
-          <p>BSc in Software Engineering (Online, 2024)</p>
-        </div>
-        <div>
-          <h3>Certifications</h3>
-          <ul>
-            <li>Saylor Academy – Software Engineering</li>
-            <li>Saylor Academy – Computer Networks</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-  <footer class="dark">
-    <div class="container">
-      <p>&copy; 2025 Natanim Gebru</p>
-    </div>
-  </footer>
+<header>
+<div class="container header-inner">
+<a aria-label="Home" class="brand" href="index.html">
+<div class="logo"><span>NG</span></div>
+<div class="title">
+<b>Natanim Gebru</b>
+<small>Web &amp; IT Technician • Software Engineering Student</small>
+</div>
+</a>
+<nav aria-label="Primary" class="desktop">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="contact.html">Contact</a>
+<a class="btn small" href="assets/Natanim_Gebru_resume_all.pdf" rel="noopener" target="_blank">Resume</a>
+</nav>
+<button aria-label="Open menu" class="burger" id="burger" title="Menu">
+      ☰
+    </button>
+</div>
+</header>
+<!-- Mobile menu -->
+<div aria-hidden="true" class="mobile-panel" id="mobilePanel">
+<div class="mobile-sheet">
+<div class="head">
+<div class="brand">
+<div class="logo"><span>NG</span></div>
+<div class="title"><b>Natanim Gebru</b><small>Menu</small></div>
+</div>
+<button aria-label="Close menu" class="burger" id="mobileClose" title="Close">✕</button>
+</div>
+<nav aria-label="Mobile">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="contact.html">Contact</a>
+<a class="btn small" href="assets/Natanim_Gebru_resume_all.pdf" rel="noopener" target="_blank">Open Resume</a>
+</nav>
+</div>
+</div>
+<main>
+<section class="hero">
+<div class="container">
+<div class="hero-grid">
+<div class="reveal">
+<div class="kicker"><span class="dot"></span> Available for internships / junior roles</div>
+<h1>Hi, I’m Natanim Gebru</h1>
+<p>
+            I’m <b>Natanim Gebru</b> — focused on front-end development, web &amp; database systems, and hands-on IT support.
+            I enjoy solving real user problems with practical, user‑centric engineering.
+          </p>
+<div class="hero-actions">
+<a class="btn" href="#projects">View Projects</a>
+<a class="btn secondary" href="contact.html">Contact Me</a>
+<a class="btn ghost" href="assets/Natanim_Gebru_resume_all.pdf" rel="noopener" target="_blank">Download Resume</a>
+</div>
+<div class="quick-actions">
+<button class="pill copy-btn" data-copy="rasaman3@gmail.com" title="Copy email" type="button">
+              ✉️ <strong>Email</strong> <span class="muted">rasaman3@gmail.com</span>
+</button>
+<button class="pill copy-btn" data-copy="+1 647-704-3953" title="Copy phone" type="button">
+              📞 <strong>Phone</strong> <span class="muted">+1 647‑704‑3953</span>
+</button>
+<span class="pill" title="Location">📍 <strong>Toronto</strong> <span class="muted">ON, Canada</span></span>
+</div>
+</div>
+<aside aria-label="Profile card" class="profile-card reveal">
+<div class="avatar">
+<img alt="Natanim Gebru profile" src="assets/profile.jpg"/>
+</div>
+<div class="profile-meta">
+<h3>Web &amp; Database Management System</h3>
+<p>
+              Strong communication and interpersonal skills—tact, diplomacy, judgment, and discretion.
+              I take personal responsibility for delivering high‑quality service.
+            </p>
+</div>
+<div class="profile-stats">
+<div class="stat"><b>2+ yrs</b><small>Technical work</small></div>
+<div class="stat"><b>Front‑end</b><small>HTML/CSS/JS</small></div>
+<div class="stat"><b>IT Support</b><small>Users &amp; systems</small></div>
+</div>
+<div class="hr"></div>
+<div class="project-actions">
+<a class="btn small secondary" href="#skills">What I do</a>
+<a class="btn small" href="contact.html">Hire / Collaborate</a>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section class="section" id="about">
+<div class="container">
+<div class="section-head">
+<div>
+<h2>About</h2>
+<p>I’m based in Toronto and currently completing my B.S. in Software Engineering at Western Governors University (expected February 2026). I enjoy building practical products—from data visualization front‑ends to ML‑powered APIs—and I’m especially interested in responsible AI, automation, and system optimization.</p>
+</div>
+<div class="badges">
+<span class="badge">User Support</span>
+<span class="badge">Networking</span>
+<span class="badge">Web &amp; Databases</span>
+<span class="badge">Smart Device Integration</span>
+</div>
+</div>
+<div class="grid">
+<div class="card reveal" style="grid-column: span 7;">
+<div class="kv">
+<div class="icon">🧩</div>
+<div>
+<h3>How I work</h3>
+<p>
+                I like clear requirements, strong communication, and clean delivery. I’m comfortable collaborating
+                across teams and keeping stakeholders updated while I troubleshoot and build.
+              </p>
+</div>
+</div>
+<div class="badges">
+<span class="badge">Tact &amp; diplomacy</span>
+<span class="badge">Problem solving</span>
+<span class="badge">Customer-first</span>
+<span class="badge">Ownership</span>
+</div>
+</div>
+<div class="card reveal" style="grid-column: span 5;">
+<div class="kv">
+<div class="icon">🎯</div>
+<div>
+<h3>What I’m aiming for</h3>
+<p>
+                Internships and junior roles in front‑end, web development, and IT / systems support.
+                I’m also open to freelance help for small business websites.
+              </p>
+</div>
+</div>
+<div class="badges">
+<span class="badge">Internships</span>
+<span class="badge">Junior roles</span>
+<span class="badge">Freelance</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt" id="skills">
+<div class="container">
+<div class="section-head">
+<div>
+<h2>Skills</h2>
+<p>Tools and technologies I use across front‑end development, databases, and IT support.</p>
+</div>
+</div>
+<div class="grid">
+<div class="card reveal" style="grid-column: span 4;">
+<h3>Front‑End</h3>
+<p class="small">HTML, CSS, JavaScript • Responsive UI • Accessibility basics</p>
+<div class="badges">
+<span class="badge">UI Layout</span>
+<span class="badge">Forms</span>
+<span class="badge">SPA basics</span>
+</div>
+</div>
+<div class="card reveal" style="grid-column: span 4;">
+<h3>Languages</h3>
+<p class="small">Java • Python • C++ • C#</p>
+<div class="badges">
+<span class="badge">OOP</span>
+<span class="badge">Debugging</span>
+<span class="badge">Clean code</span>
+</div>
+</div>
+<div class="card reveal" style="grid-column: span 4;">
+<h3>Database &amp; Tools</h3>
+<p class="small">SQL Server • Web &amp; Database Management • React &amp; Firebase</p>
+<div class="badges">
+<span class="badge">Queries</span>
+<span class="badge">Data modeling</span>
+<span class="badge">CRUD</span>
+</div>
+</div>
+<div class="card reveal" style="grid-column: span 6;">
+<h3>IT / Systems</h3>
+<p class="small">
+            Server racks • Networking equipment • Hardware/peripherals • Microsoft apps • Desktop OS support
+          </p>
+<div class="badges">
+<span class="badge">Troubleshooting</span>
+<span class="badge">User support</span>
+<span class="badge">Hardware</span>
+<span class="badge">Networking</span>
+</div>
+</div>
+<div class="card reveal" style="grid-column: span 6;">
+<h3>Smart Tech Integration</h3>
+<p class="small">
+            Integrated smart home devices with computer networks for centralized control and monitoring.
+          </p>
+<div class="badges">
+<span class="badge">IoT basics</span>
+<span class="badge">Network setup</span>
+<span class="badge">Monitoring</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="experience">
+<div class="container">
+<div class="section-head">
+<div>
+<h2>Experience</h2>
+<p>Hands‑on roles focused on IT support, hardware, and networked systems.</p>
+</div>
+</div>
+<div class="timeline">
+<div class="timeline-item reveal">
+<div class="when">Toronto, ON • 2022 – 2025</div>
+<div class="role">
+<b>Computer Electrician — AMPS Logic Electric Ltd</b>
+<ul>
+<li>Installed computer‑controlled machinery in industrial settings.</li>
+<li>Installed, maintained, and repaired server racks, networking equipment, and other computer hardware.</li>
+<li>Integrated smart home devices with computer networks for centralized control and monitoring.</li>
+</ul>
+</div>
+</div>
+<div class="timeline-item reveal">
+<div class="when">Addis Ababa, Ethiopia • 2020 – 2021</div>
+<div class="role">
+<b>Desktop Support Manager</b>
+<ul>
+<li>Supported desktop operating systems, Microsoft apps, and hardware/peripherals.</li>
+<li>Proactively resolved customer problems with equipment and services.</li>
+<li>Kept skills current across hardware, operating systems, and software.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section alt" id="projects">
+<div class="container">
+<div class="section-head">
+<div>
+<h2>Projects</h2>
+<p>
+            A few representative project areas. Add links/screenshots as you publish repos.
+            (You can edit these cards any time.)
+          </p>
+</div>
+</div>
+<div class="chips reveal">
+<button class="chip active" data-filter="all" type="button">All</button>
+<button class="chip" data-filter="frontend" type="button">Front‑end</button>
+<button class="chip" data-filter="database" type="button">Database</button>
+<button class="chip" data-filter="support" type="button">IT / Support</button>
+</div>
+<div class="grid">
+<div class="card project-card reveal" data-tags="data" style="grid-column: span 4;">
+<h3>Interactive World Map Data Visualization</h3>
+<p class="small">Designed an SVG-based interactive map with dynamic country data.</p>
+<div class="project-meta"><span class="badge">Angular</span><span class="badge">APIs</span><span class="badge">Data Viz</span></div>
+<div class="project-actions"><a class="btn" href="#">Code</a><a class="btn" href="#">Demo</a></div>
+<ul><li>World Bank API integration for real‑time regional indicators.</li><li>Modular routing, event binding, and reusable Angular components.</li><li>Improved data accessibility with clear UI states (loading/error).</li></ul></div>
+<div class="card project-card reveal" data-tags="frontend" style="grid-column: span 4;">
+<h3>California Interactive Guide</h3>
+<p class="small">A clickable guide to explore California regions and cities.</p>
+<div class="project-meta"><span class="badge">Frontend</span><span class="badge">UX</span><span class="badge">Responsive</span></div>
+<div class="project-actions"><a class="btn" href="#">Code</a></div>
+<ul><li>Responsive design and accessible navigation patterns.</li><li>Strong visual hierarchy and information architecture.</li><li>Optimized layout for mobile-first browsing.</li></ul></div>
+<div class="card project-card reveal" data-tags="ml" style="grid-column: span 4;">
+<h3>AI‑Based Recommendation System</h3>
+<p class="small">Recommendation models built from behavioral data.</p>
+<div class="project-meta"><span class="badge">ML</span><span class="badge">Python</span><span class="badge">API</span></div>
+<div class="project-actions"><a class="btn" href="#">Code</a></div>
+<ul><li>Feature engineering, evaluation, and performance tuning.</li><li>REST API delivery with Flask for easy integration.</li><li>Clear experimentation notes for reproducibility.</li></ul></div>
+<div class="card project-card reveal" data-tags="ml" style="grid-column: span 4;">
+<h3>LLM‑Enhanced Chat Application (RAG)</h3>
+<p class="small">RAG chatbot with conversation memory and deployment automation.</p>
+<div class="project-meta"><span class="badge">GenAI</span><span class="badge">RAG</span><span class="badge">Cloud</span></div>
+<div class="project-actions"><a class="btn" href="#">Code</a></div>
+<ul><li>Contextual retrieval pipeline for higher-quality responses.</li><li>Deployed on IBM Cloud Functions.</li><li>Optimized token usage and inference latency.</li></ul></div></div>
+</div>
+</section>
+<section class="section" id="education">
+<div class="container">
+<div class="section-head">
+<div>
+<h2>Education &amp; Certifications</h2>
+<p>Formal education and certifications supporting my software engineering and networking foundation.</p>
+</div>
+</div>
+<div class="grid">
+<div class="card reveal" style="grid-column: span 6;">
+<h3>Education</h3>
+<div class="hr"></div>
+<p><b>Western Governors University</b> — B.S. Software Engineering (Online) <span class="muted">• 2024 – Ongoing</span></p>
+<p class="small"><b>Addis Ababa Science and Technology University</b> — 3rd year B.S. Software Engineering <span class="muted">• 2018 – 2021</span></p>
+<p class="small"><b>Yaberus High School</b> — High School Diploma</p>
+</div>
+<div class="card reveal" style="grid-column: span 6;">
+<h3>Certifications</h3>
+<div class="hr"></div>
+<ul>
+<li>Saylor Academy — Computer Communications and Networks</li>
+<li>Saylor Academy — Software Engineering</li>
+</ul>
+<div class="hr"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="section cta">
+<div class="container">
+<div class="card cta-inner reveal">
+<div>
+<h3 style="font-size:18px;margin-bottom:6px;">Want to build something together?</h3>
+<p class="small">
+            I’m available for internships, junior roles, and small freelance projects (websites, landing pages, and support).
+          </p>
+</div>
+<div style="display:flex;gap:10px;flex-wrap:wrap;">
+<a class="btn" href="contact.html">Contact</a>
+<a class="btn secondary" href="assets/Natanim_Gebru_resume_all.pdf" rel="noopener" target="_blank">Resume</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container footer-grid">
+<div>
+<b>Natanim Gebru</b><br/>
+<span class="small">© <span id="year"></span> • Toronto, ON</span>
+</div>
+<div class="footer-links">
+<a href="mailto:rasaman3@gmail.com">Email</a>
+<a href="tel:+16477043953">Phone</a>
+<a href="contact.html">Contact Page</a>
+<a href="assets/Natanim_Gebru_resume_all.pdf" rel="noopener" target="_blank">Resume</a>
+</div>
+</div>
+</footer>
+<button aria-label="Back to top" class="backTop" id="backTop" title="Back to top">↑</button>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
 </body>
 </html>
